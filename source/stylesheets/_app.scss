@@ -1,0 +1,13 @@
+$light-blue: #00AAE2 !global;
+$blue: #0A70CF !global;
+$dark-blue: #022542 !global;
+$primary: $light-blue !global;
+$secondary: $blue !global;
+$tertiary: $dark-blue !global;
+
+@import 'vendor/0-dir';
+@import 'modules/0-dir';
+@import 'layouts/0-dir';
+
+
+
