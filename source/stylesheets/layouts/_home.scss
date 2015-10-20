@@ -67,18 +67,20 @@
       background-color: $primary;
       padding: 25px 0;
       position: relative;
-      &:after {
-        content:"";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 50px 0 50px 65px;
-        border-color: transparent transparent transparent $primary;
-        position: absolute;
-        top: 50%;
-        margin-top: -50px;
-        right: -65px;
-        z-index: 2;
+      @media (min-width:991px) {
+        &:after {
+          content:"";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 50px 0 50px 65px;
+          border-color: transparent transparent transparent $primary;
+          position: absolute;
+          top: 50%;
+          margin-top: -50px;
+          right: -65px;
+          z-index: 2;
+        }
       }
     }
     .col-md-6:first-of-type {
@@ -88,7 +90,7 @@
       -o-background-size: cover;
       background-size: cover; 
       @media (max-width:990px) {
-        height: 320px;
+        height: 260px;
       }
     }
   }
@@ -97,18 +99,20 @@
       background-color: $primary;
       padding: 25px 0;
       position: relative;
-      &:after {
-        content:"";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 50px 65px 50px 0;
-        border-color: transparent $primary transparent transparent;
-        position: absolute;
-        top: 50%;
-        margin-top: -50px;
-        left: -65px;
-        z-index: 2;
+      @media (min-width:991px) {
+        &:after {
+          content:"";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 50px 65px 50px 0;
+          border-color: transparent $primary transparent transparent;
+          position: absolute;
+          top: 50%;
+          margin-top: -50px;
+          left: -65px;
+          z-index: 2;
+        }
       }
     }
     .col-md-6:first-of-type {
@@ -118,7 +122,7 @@
       -o-background-size: cover;
       background-size: cover; 
       @media (max-width:990px) {
-        height: 320px;
+        height: 260px;
       }
     }
   }
