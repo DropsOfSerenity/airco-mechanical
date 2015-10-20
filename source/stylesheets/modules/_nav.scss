@@ -6,7 +6,7 @@ nav {
   height: 50px;
   z-index: 9999;
   background-color: #fff;
-  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
   .container {
     position: relative;
   }
@@ -15,9 +15,9 @@ nav {
     height: 28px;
     transition: all 0.2s ease-out;
     img {
+      margin-top: 10px; 
       width: auto;
       height: 28px;
-      margin-top: 10px; 
     }
     &:hover {
       opacity: 0.8;
@@ -25,7 +25,54 @@ nav {
   }
 }
 
-@media (max-width:991px) {
+@media (min-width:991px) {
+  nav {
+    height: 90px;
+    position: static;
+    .site-id img {
+      margin-top: 30px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          padding:0 12px;
+          color: #333;
+          transition: all 0.2s ease-out;
+          line-height: 90px;
+          &:hover {
+            color: $tertiary;
+            background-color: #fafafa;
+          }
+        }
+        &:last-of-type {
+          margin-left: 8px;
+          a {
+            color: $primary;
+            border: 1px solid $primary;
+            border-radius: 14px;
+            line-height: 28px;
+            padding:0 20px;
+            transition: background-color 0.2s ease-out;
+            &:hover {
+              background-color: $primary;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:990px) {
   // BURGER VARIABLES
   $ecg-burger-size:50px;
   $ecg-burger-color: #333;
@@ -50,11 +97,6 @@ nav {
       position: absolute;
       top: 14px;
       left: 9px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
       box-sizing: content-box;
       border-top: 3px solid $ecg-burger-color;
       border-bottom: 3px solid $ecg-burger-color;
@@ -117,6 +159,7 @@ nav {
       margin: 0 auto;
       text-align: center;
       list-style-type: none;
+      padding: 0;
       li {
         margin: 0;
         padding: 0;
