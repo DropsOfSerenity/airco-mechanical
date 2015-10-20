@@ -1,0 +1,251 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  background-color: #fff;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  .container {
+    position: relative;
+  }
+  .site-id {
+    width: auto;
+    height: 28px;
+    transition: all 0.2s ease-out;
+    img {
+      margin-top: 10px; 
+      width: auto;
+      height: 28px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width:991px) {
+  nav {
+    height: 90px;
+    position: static;
+    .site-id img {
+      margin-top: 30px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          padding:0 12px;
+          color: #333;
+          transition: all 0.2s ease-out;
+          line-height: 90px;
+          &:hover {
+            color: $tertiary;
+            background-color: #fafafa;
+          }
+        }
+        &:last-of-type {
+          margin-left: 8px;
+          a {
+            color: $primary;
+            border: 1px solid $primary;
+            border-radius: 14px;
+            line-height: 28px;
+            padding:0 20px;
+            transition: background-color 0.2s ease-out;
+            &:hover {
+              background-color: $primary;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:990px) {
+  // BURGER VARIABLES
+  $ecg-burger-size:50px;
+  $ecg-burger-color: #333;
+  // MENU VARIABLES
+  $ecg-menu-offset: 50px; // IMPORTANT | Make this equal the height of your fixed nav 
+  $ecg-menu-bg: $tertiary;
+  $ecg-back-icon:"⇦";
+  $ecg-forward-icon:"⇨";
+  .ecg-burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $ecg-burger-size;
+    height: $ecg-burger-size;
+    cursor: pointer;
+    opacity: 0.6;
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 6px;
+      position: absolute;
+      top: 14px;
+      left: 9px;
+      box-sizing: content-box;
+      border-top: 3px solid $ecg-burger-color;
+      border-bottom: 3px solid $ecg-burger-color;
+    }
+    &:after {
+      @extend .ecg-burger:before;
+      border: none;
+      width: 32px;
+      height: 3px;
+      top: 32px;
+      left: 9px;
+      background-color: $ecg-burger-color;
+    }
+  }
+
+  body.open .ecg-burger {
+    opacity: 1;
+    &:before {
+      border-bottom: 0;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 22px;
+      left: 11px;
+    }
+    &:after {
+      position: absolute;
+      border-bottom: 0;
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 23px;
+      left: 9px;
+    }
+  }
+
+  .ecg-menu {
+    position: fixed;
+    top: $ecg-menu-offset;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: $ecg-menu-bg;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 9000;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    ul {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0 auto;
+      text-align: center;
+      list-style-type: none;
+      padding: 0;
+      li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        position: relative;
+        a {
+          font-size: 1em;
+          letter-spacing: 2px;
+          display: block;
+          height: 100%;
+          padding: 0 15px;
+          line-height: 45px;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #fff;
+          font-weight: bold;
+          text-transform: uppercase;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+          @media screen and (min-width: 750px) {
+            font-size: 24px;
+          }
+          &:hover {
+            color: rgba(250, 250, 250, 0.8);
+          }
+          &:active {
+            color: red;
+          }
+        }
+      }
+      li.submenu {
+        ul {
+          display: none;
+          li a {
+            font-weight: normal;
+            font-size: 18px;
+            text-transform: none;
+          }
+        }
+        &:not(.open) > a:after {
+          content: $ecg-forward-icon;
+          margin-left: 5px;
+          position: absolute;
+          right: 15px;
+        }
+      }
+    }
+  }
+
+  body.open .ecg-menu {
+    display: table;
+    ul.open {
+      li.submenu.open {
+        & > a {
+          span {
+            display: none;
+          }
+          &:before {
+            content: $ecg-back-icon;
+            margin-left: 5px;
+            position: absolute;
+            left: 15px;
+          }
+          &:after {
+            content: "Back";
+          }
+        }
+        ul {
+          display: block;
+        }
+      }
+      & > li:not(.submenu) {
+        display: none;
+      }
+    }
+  }
+
+  body.open li.submenu.open {
+    & > li:not(.submenu) {
+      display: none;
+    }
+  }
+}

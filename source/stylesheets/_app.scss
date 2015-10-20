@@ -1,0 +1,60 @@
+$light-blue: #00AAE2 !global;
+$blue: #0A70CF !global;
+$dark-blue: #022542 !global;
+$primary: $light-blue !global;
+$secondary: $blue !global;
+$tertiary: $dark-blue !global;
+
+@import 'vendor/0-dir';
+@import 'modules/0-dir';
+@import 'layouts/0-dir';
+
+body {
+	font-family: 'Lato', sans-serif;	
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.6;
+	color: #555;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+	letter-spacing: 0.03em;
+}
+
+.u-round-img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border-radius: 50%;
+}
+
+.button, input[type="submit"], button {
+	display: inline-block;
+	padding: 0 45px;
+	line-height: 40px;
+	font-size: 18px;
+	border: 2px solid $primary;
+	border-radius: 20px;
+	color: $primary;
+	margin: 10px auto;
+	text-align: center;
+	tranition: background 0.2s ease-out;
+	&:hover {
+		color: #fff;
+		background: $primary;
+	}
+/*	@media (min-width: 720px) {
+		font-size: 28px;
+		line-height: 50px;
+		border-radius: 25px;
+		font-weight: 300;
+		padding: 0 55px;
+	} */
+}
