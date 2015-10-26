@@ -33,7 +33,7 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
+# activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -48,7 +48,7 @@ end
 # end
 
 # Use relative URLs
-  activate :relative_assets
+# activate :relative_assets
 
 set :css_dir, 'stylesheets'
 
