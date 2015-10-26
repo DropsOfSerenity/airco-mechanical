@@ -11,6 +11,10 @@ $tertiary: $dark-blue !global;
 
 body {
 	font-family: 'Lato', sans-serif;	
+	margin-top: 50px;
+	@media (min-width:991px) {
+		margin-top: 0;
+	}
 }
 
 a:hover {
