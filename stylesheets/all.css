@@ -4411,12 +4411,12 @@ a.fancybox-block {
       border-radius: 14px;
       padding: 0 20px; }
   /* line 236, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
-  a.fancybox-block:hover span {
+  a.fancybox-block:not(.contact):hover span {
     color: #fff;
     background-color: #00AAE2;
     border-color: #00AAE2; }
   /* line 241, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
-  a.fancybox-block:hover img {
+  a.fancybox-block:not(.contact):hover img {
     opacity: 0.8; }
   /* line 246, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block.contact > section {
