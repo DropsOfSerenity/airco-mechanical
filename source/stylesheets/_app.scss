@@ -232,7 +232,7 @@ a.fancybox-block {
 			padding: 0 20px;
 		}
 	}
-	&:hover {
+	&:not(.contact):hover {
 		span {
 			color: #fff;
 			background-color: $primary;
