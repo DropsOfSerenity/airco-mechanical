@@ -28,11 +28,65 @@ h1, h2, h3, h4, h5 {
 	letter-spacing: 0.03em;
 }
 
+img {
+	max-width: 100%;
+}
+
+.u-hero {
+	background-color: $secondary;
+	color: #fff;
+	padding: 25px 0;
+	h1 {
+		font-size: 56px;
+		text-align: center;		
+		margin: 0;
+	}
+	@media (min-width:991px) {
+		padding: 45px 0;
+	}
+	&.hero-sustainability {
+		padding: 100px 0;
+		background: url('http://placehold.it/1200x600') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+}
+
+.u-cta {
+	background-color: $tertiary;
+	text-align: center;
+	padding: 45px 0;
+	h3 {
+		color: $primary;
+		font-size: 32px;
+	}
+	p {
+		color: #fff;
+		padding: 15px 0;
+		max-width: 420px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
 .u-round-img {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
 	border-radius: 50%;
+}
+
+.u-centered {
+	display: block !important;
+	max-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.u-text-center {
+	text-align: center;
 }
 
 .button, input[type="submit"], button {
@@ -50,11 +104,148 @@ h1, h2, h3, h4, h5 {
 		color: #fff;
 		background: $primary;
 	}
-/*	@media (min-width: 720px) {
-		font-size: 28px;
-		line-height: 50px;
-		border-radius: 25px;
-		font-weight: 300;
-		padding: 0 55px;
-	} */
+}
+
+form {
+	padding: 40px 0;
+	background: #f9f9f9;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	background: #fff;
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea, {
+  padding: 8px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  margin: 5px 0 20px 0;
+  max-width: 100%;
+  max-height: 850px;
+  font-size: 0.8em;
+  transition: border-color 0.2s ease-out;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 120px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 1px solid #aaa;
+  outline: 0;
+}
+
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+input[type="text"].error,
+input[type="tel"].error,
+input[type="url"].error,
+input[type="password"].error,
+.nice-select.error {
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+textarea {
+  min-height: 120px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block;
+}
+
+a.fancybox-block {
+	position: relative;
+	display: block;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #eee;
+	margin-bottom: 25px;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.4) inset;
+	& > section {
+		display: block;
+		width: 100%;
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		color: #fff;
+		top:50%;
+		left: 0;
+		margin-top: -52px;
+		height: 105px;
+		h5, p {
+			width: 100%;
+			color: #fff;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		span {
+			line-height: 28px;
+			display: inline-block;
+			color: #fff;
+			border:2px solid #fff;
+			border-radius: 14px;
+			padding: 0 20px;
+		}
+	}
+	&:hover {
+		span {
+			color: #fff;
+			background-color: $primary;
+			border-color: $primary;
+		}
+		img {
+			opacity: 0.8;
+		}
+	}
+	&.contact {
+		& > section {
+			height: 72px; 
+			margin-top: -36px;
+		}
+	}
 }
