@@ -16,6 +16,7 @@
 		text-align: center;
 		li {
 			display: inline-block;
+			margin: 0 5px;
 		}
 		a {
 			padding: 0 15px;
@@ -33,20 +34,15 @@
 }
 
 .about-ezt-container {
-	h5 {
+	/* h5 {
 		color: $secondary;
 		font-size: 24px;
 		margin:0 0 20px 0;
-	}
+	} */
 	@media (max-width:767px) {
 		.ezt-content {
 			display: block !important;
 			margin-bottom: 25px;
-		}
-	}
-	@media (min-width:991px) {
-		h5 {
-			text-align: center;
 		}
 	}
 }
