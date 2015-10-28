@@ -270,3 +270,11 @@ body.projects nav ul li:nth-of-type(5) a {
 body.careers nav ul li:nth-of-type(6) a {
   color: $primary;
 }
+
+body.contact nav ul li:nth-of-type(7) a {
+  color: $primary;
+  @media (min-width:991px) {
+    color: #fff;
+    background-color: $primary;
+  }
+}

@@ -1,1 +1,28 @@
-// projects styling
+.projects-ezt {
+	padding:0;
+	list-style-type: none;
+	li {
+		margin: 0 0 5px 0;
+	}
+	a {
+		display: block;
+		color: #777;
+		line-height: 24px;
+		transition: all 0.2s ease-out;
+		&.ezt-active {
+			padding-left: 10px;
+			box-shadow:5px 0 $primary inset;
+		}
+		&:hover {
+			color: $secondary;
+		  padding-left: 10px;
+		}
+	}
+}
+
+.projects-ezt-container {
+	h3 {
+		margin: 0 0 25px 0;
+		font-size: 32px;
+	}
+}
