@@ -4231,11 +4231,20 @@ body.contact footer .main ul li:nth-of-type(7) a {
     .projects-ezt a:hover {
       color: #0A70CF;
       padding-left: 10px; }
+  @media (max-width: 767px) {
+    /* line 1, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+    .projects-ezt {
+      display: none; } }
 
-/* line 24, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+/* line 27, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
 .projects-ezt-container h3 {
   margin: 0 0 25px 0;
   font-size: 32px; }
+@media (max-width: 767px) {
+  /* line 32, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+  .projects-ezt-container .ezt-content {
+    display: block !important;
+    margin-bottom: 25px; } }
 
 /* line 1, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_contact.scss */
 .l-contact-splash {
