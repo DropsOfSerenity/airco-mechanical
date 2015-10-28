@@ -18,11 +18,20 @@
 		  padding-left: 10px;
 		}
 	}
+	@media (max-width:767px) {
+		display: none;
+	}
 }
 
 .projects-ezt-container {
 	h3 {
 		margin: 0 0 25px 0;
 		font-size: 32px;
+	}
+	@media (max-width:767px) {
+		.ezt-content {
+			display: block !important;
+			margin-bottom: 25px;
+		}
 	}
 }
