@@ -64,10 +64,27 @@ img {
 	margin-bottom: 25px;
 }
 
+.u-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-color: #000;
+	opacity: 0.4;
+}
+
 .u-hero {
 	background-color: $primary;
 	color: #fff;
 	padding: 25px 0;
+	position: relative;
+	overflow: hidden;
+	.container {
+		position: relative;
+		z-index: 2;
+	}
 	h1 {
 		font-size: 26px;
 		text-align: center;		
@@ -81,7 +98,15 @@ img {
 	}
 	&.hero-sustainability {
 		padding: 100px 0;
-		background: url('http://placehold.it/1200x600') no-repeat center center fixed; 
+		background: url('../images/sustainability.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	&.hero-safety {
+		padding: 100px 0;
+		background: url('../images/safety.jpg') no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
