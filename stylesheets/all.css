@@ -4169,35 +4169,36 @@ body.contact footer .main ul li:nth-of-type(7) a {
     display: block;
     color: #333;
     line-height: 32px;
-    transition: all 0.2s ease-out; }
-    /* line 9, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+    transition: all 0.2s ease-out;
+    background-color: #eee; }
+    /* line 10, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
     .about-ezt a.ezt-active {
-      color: #0A70CF;
+      color: #00AAE2;
       text-decoration: none; }
   @media (min-width: 991px) {
     /* line 1, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
     .about-ezt {
       margin-bottom: 20px;
       text-align: center; }
-      /* line 17, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+      /* line 18, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
       .about-ezt li {
         display: inline-block;
         margin: 0 5px; }
-      /* line 21, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+      /* line 22, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
       .about-ezt a {
         padding: 0 15px;
         text-align: center;
-        border-radius: 12px; }
-        /* line 25, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+        border-radius: 5px; }
+        /* line 26, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
         .about-ezt a.ezt-active {
           color: #fff;
-          background-color: #0A70CF; } }
+          background-color: #00AAE2; } }
   @media (max-width: 767px) {
     /* line 1, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
     .about-ezt {
       display: none; } }
 
-/* line 36, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+/* line 37, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
 .about-ezt-container {
   /* h5 {
   	color: $secondary;
@@ -4205,7 +4206,7 @@ body.contact footer .main ul li:nth-of-type(7) a {
   	margin:0 0 20px 0;
   } */ }
   @media (max-width: 767px) {
-    /* line 43, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
+    /* line 44, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_about.scss */
     .about-ezt-container .ezt-content {
       display: block !important;
       margin-bottom: 25px; } }
@@ -4315,23 +4316,32 @@ img {
   max-width: 100%; }
 
 /* line 58, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+.u-margin-none {
+  margin: none; }
+
+/* line 62, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+.u-styled {
+  list-style-type: circle;
+  margin-bottom: 25px; }
+
+/* line 67, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-hero {
-  background-color: #0A70CF;
+  background-color: #00AAE2;
   color: #fff;
   padding: 25px 0; }
-  /* line 62, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 71, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   .u-hero h1 {
     font-size: 26px;
     text-align: center;
     margin: 0; }
   @media (min-width: 991px) {
-    /* line 58, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+    /* line 67, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
     .u-hero {
       padding: 45px 0; }
-      /* line 69, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+      /* line 78, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
       .u-hero h1 {
         font-size: 56px; } }
-  /* line 73, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 82, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   .u-hero.hero-sustainability {
     padding: 100px 0;
     background: url("http://placehold.it/1200x600") no-repeat center center fixed;
@@ -4340,16 +4350,16 @@ img {
     -o-background-size: cover;
     background-size: cover; }
 
-/* line 83, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 92, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-cta {
   background-color: #022542;
   text-align: center;
   padding: 45px 0; }
-  /* line 87, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
-  .u-cta h3 {
-    color: #00AAE2;
+  /* line 96, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  .u-cta h2 {
+    color: #fff;
     font-size: 32px; }
-  /* line 91, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 100, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   .u-cta p {
     color: #fff;
     padding: 15px 0;
@@ -4357,29 +4367,29 @@ img {
     margin: 0 auto;
     display: block; }
 
-/* line 100, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 109, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-round-img {
   margin-right: auto;
   margin-left: auto;
   display: block;
   border-radius: 50%; }
 
-/* line 107, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 116, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-centered {
   display: block !important;
   max-width: 320px;
   margin: 0 auto;
   width: 100%; }
 
-/* line 114, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 123, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-text-center {
   text-align: center; }
 
-/* line 118, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 127, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .u-grey-bg {
   background-color: #f5f5f5; }
 
-/* line 121, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 130, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 .button, input[type="submit"], button {
   display: inline-block;
   padding: 0 45px;
@@ -4391,20 +4401,25 @@ img {
   text-align: center;
   tranition: background 0.2s ease-out;
   background: #00AAE2; }
-  /* line 132, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 141, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  .button.u-text-center, input[type="submit"].u-text-center, button.u-text-center {
+    margin: 15px auto;
+    display: block;
+    max-width: 260px; }
+  /* line 146, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   .button:hover, input[type="submit"]:hover, button:hover {
     color: #fff;
     background: #00bdfc; }
-  /* line 136, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 150, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   .button:focus, input[type="submit"]:focus, button:focus {
     color: #fff; }
 
-/* line 141, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 155, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 form {
   padding: 40px 0;
   background: #f9f9f9; }
 
-/* line 146, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 160, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 input[type="submit"] {
   display: block;
   width: 100%;
@@ -4412,7 +4427,7 @@ input[type="submit"] {
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 155, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 169, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -4437,7 +4452,7 @@ textarea {
   transition: border-color 0.2s ease-out; }
 
 /* Removes awkward default styles on some inputs for iOS */
-/* line 182, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 196, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -4450,13 +4465,13 @@ textarea {
   -moz-appearance: none;
   appearance: none; }
 
-/* line 195, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 209, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 textarea {
   min-height: 120px;
   padding-top: 6px;
   padding-bottom: 6px; }
 
-/* line 201, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 215, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -4468,7 +4483,7 @@ textarea:focus {
   border: 1px solid #aaa;
   outline: 0; }
 
-/* line 213, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 227, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 input[type="email"].error,
 input[type="number"].error,
 input[type="search"].error,
@@ -4480,14 +4495,14 @@ input[type="password"].error,
   border: 1px solid #00AAE2;
   color: #00AAE2; }
 
-/* line 225, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 239, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 textarea {
   min-height: 120px;
   padding-top: 6px;
   padding-bottom: 6px;
   display: block; }
 
-/* line 232, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+/* line 246, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 a.fancybox-block {
   position: relative;
   display: block;
@@ -4495,11 +4510,11 @@ a.fancybox-block {
   overflow: hidden;
   background-color: #eee;
   margin-bottom: 25px; }
-  /* line 239, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 253, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block img {
     transition: all 0.2s ease-out;
     width: 100%; }
-  /* line 243, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 257, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block > section {
     display: block;
     width: 80%;
@@ -4517,14 +4532,14 @@ a.fancybox-block {
     background-color: rgba(250, 250, 250, 0.8);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-out; }
-    /* line 260, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+    /* line 274, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
     a.fancybox-block > section h5, a.fancybox-block > section p {
       width: 100%;
       color: #333;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
-    /* line 267, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+    /* line 281, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
     a.fancybox-block > section span {
       line-height: 28px;
       display: inline-block;
@@ -4532,23 +4547,23 @@ a.fancybox-block {
       border: 2px solid #00AAE2;
       border-radius: 14px;
       padding: 0 20px; }
-  /* line 277, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 291, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block:hover span {
     color: #fff;
     background-color: #00AAE2;
     border-color: #00AAE2; }
-  /* line 282, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 296, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block:hover > section {
     background-color: #fafafa; }
-  /* line 285, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 299, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block:hover img {
     opacity: 0.8; }
   @media (min-width: 991px) {
-    /* line 291, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+    /* line 305, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
     a.fancybox-block:not(.contact) > section {
       width: 40%;
       margin-left: -20%; } }
-  /* line 298, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
+  /* line 312, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
   a.fancybox-block.contact > section {
     height: 125px;
     margin-top: -62px; }
