@@ -34,6 +34,11 @@
 
 .splash-1 {
   text-align: center;
+  img {
+    max-width: 280px;
+    margin: 15px auto;
+    display: block;
+  }
   h2 {
     font-size: 24px;
     color: $primary;
@@ -146,6 +151,7 @@
   text-align:center;
   img {
     margin: 15px auto;
+    border-radius: 5px;
   }
   a {
     display: block;
