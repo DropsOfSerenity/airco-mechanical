@@ -10,7 +10,7 @@ $tertiary: $dark-blue !global;
 @import 'layouts/0-dir';
 
 body.main {
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Lato', sans-serif;	
 	margin-top: 50px;
 	@media (min-width:991px) {
 		margin-top: 0;
@@ -43,7 +43,8 @@ p {
 
 h1, h2, h3, h4, h5 {
 	letter-spacing: 0.03em;
-	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
 }
 
 h4 {
@@ -59,12 +60,15 @@ img {
 	color: #fff;
 	padding: 25px 0;
 	h1 {
-		font-size: 56px;
+		font-size: 26px;
 		text-align: center;		
 		margin: 0;
 	}
 	@media (min-width:991px) {
 		padding: 45px 0;
+		h1 {
+			font-size: 56px;
+		}
 	}
 	&.hero-sustainability {
 		padding: 100px 0;
@@ -119,15 +123,15 @@ img {
 	padding: 0 45px;
 	line-height: 40px;
 	font-size: 18px;
-	border: 2px solid $primary;
-	border-radius: 20px;
-	color: $primary;
+	border-radius: 5px;
+	color: #fff;
 	margin: 10px auto;
 	text-align: center;
 	tranition: background 0.2s ease-out;
+	background: $primary;
 	&:hover {
 		color: #fff;
-		background: $primary;
+		background: lighten($primary, 5);
 	}
 	&:focus {
 		color: #fff;
