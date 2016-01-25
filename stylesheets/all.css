@@ -4083,12 +4083,12 @@ body.contact footer .main ul li:nth-of-type(7) a {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 50px 0 50px 65px;
+      border-width: 50px 0 50px 45px;
       border-color: transparent transparent transparent #022542;
       position: absolute;
       top: 50%;
       margin-top: -50px;
-      right: -65px;
+      right: -45px;
       z-index: 2; } }
 /* line 94, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_home.scss */
 .l-state.sac .col-md-6:first-of-type {
@@ -4113,12 +4113,12 @@ body.contact footer .main ul li:nth-of-type(7) a {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 50px 65px 50px 0;
+      border-width: 50px 45px 50px 0;
       border-color: transparent #022542 transparent transparent;
       position: absolute;
       top: 50%;
       margin-top: -50px;
-      left: -65px;
+      left: -45px;
       z-index: 2; } }
 /* line 126, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_home.scss */
 .l-state.sf .col-md-6:first-of-type {
