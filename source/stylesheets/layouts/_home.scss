@@ -1,7 +1,7 @@
 .home-hero {
 	text-align:center;
 	padding: 45px 0;
-	background: url('../images/hero.png') no-repeat center center fixed; 
+	background: url('../images/splash-home.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,22 +35,25 @@
 .splash-1 {
   text-align: center;
   h2 {
-    font-size: 48px;
+    font-size: 24px;
+    color: $primary;
     font-weight: bold;
-    color: $secondary;
   }
   @media (min-width: 991px) { 
     text-align: left;
+    h2 {
+      font-size: 32px;
+    }
   }
 }
 
 .splash-2 {
   text-align: center;
-  background-color: $tertiary;
+  background-color: $primary;
   h2 {
     font-size: 48px;
     font-weight: bold;
-    color: $primary;
+    color: #fff;
   }
   p {
     color: #fff;
@@ -64,7 +67,7 @@
   }
   &.sac {
     .col-md-6:last-of-type {
-      background-color: $primary;
+      background-color: $tertiary;
       padding: 25px 0;
       position: relative;
       @media (min-width:991px) {
@@ -74,7 +77,7 @@
           height: 0;
           border-style: solid;
           border-width: 50px 0 50px 65px;
-          border-color: transparent transparent transparent $primary;
+          border-color: transparent transparent transparent $tertiary;
           position: absolute;
           top: 50%;
           margin-top: -50px;
@@ -96,7 +99,7 @@
   }
   &.sf {
     .col-md-6:last-of-type {
-      background-color: $primary;
+      background-color: $tertiary;
       padding: 25px 0;
       position: relative;
       @media (min-width:991px) {
@@ -106,7 +109,7 @@
           height: 0;
           border-style: solid;
           border-width: 50px 65px 50px 0;
-          border-color: transparent $primary transparent transparent;
+          border-color: transparent $tertiary transparent transparent;
           position: absolute;
           top: 50%;
           margin-top: -50px;
@@ -141,12 +144,8 @@
 
 .splash-3 {
   text-align:center;
-  h2 {
-    color: $secondary;
-  }
   img {
-    max-width: 140px;
-    margin: 25px auto;
+    margin: 15px auto;
   }
   a {
     display: block;

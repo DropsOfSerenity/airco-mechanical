@@ -55,14 +55,15 @@ nav {
         &:last-of-type {
           margin-left: 8px;
           a {
-            color: $primary;
+            color: #fff;
             border: 1px solid $primary;
-            border-radius: 14px;
-            line-height: 28px;
+            border-radius: 5px;
+            line-height: 40px;
             padding:0 20px;
             transition: background-color 0.2s ease-out;
+            background-color: $primary;
             &:hover {
-              background-color: $primary;
+              background-color: lighten($primary, 5);
               color: #fff;
             }
           }
