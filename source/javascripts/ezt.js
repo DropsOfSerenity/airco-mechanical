@@ -1,5 +1,5 @@
 $(function(){  
-	var eztLink = $( ".ezt-nav a" );
+  var eztLink = $( ".ezt-nav a" );
 
   $(eztLink).click(function() {
     var ezTarget = $(this).closest('ul').attr('ezt');

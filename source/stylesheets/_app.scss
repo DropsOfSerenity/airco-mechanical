@@ -55,8 +55,17 @@ img {
 	max-width: 100%;
 }
 
+.u-margin-none {
+	margin: none;
+}
+
+.u-styled {
+	list-style-type: circle;
+	margin-bottom: 25px;
+}
+
 .u-hero {
-	background-color: $secondary;
+	background-color: $primary;
 	color: #fff;
 	padding: 25px 0;
 	h1 {
@@ -84,8 +93,8 @@ img {
 	background-color: $tertiary;
 	text-align: center;
 	padding: 45px 0;
-	h3 {
-		color: $primary;
+	h2 {
+		color: #fff;
 		font-size: 32px;
 	}
 	p {
@@ -129,6 +138,11 @@ img {
 	text-align: center;
 	tranition: background 0.2s ease-out;
 	background: $primary;
+	&.u-text-center {
+		margin: 15px auto;
+		display: block;
+		max-width: 260px;
+	}
 	&:hover {
 		color: #fff;
 		background: lighten($primary, 5);

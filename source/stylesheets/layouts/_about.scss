@@ -6,8 +6,9 @@
 		color: #333;
 		line-height: 32px;
 		transition: all 0.2s ease-out;
+		background-color: #eee;
 		&.ezt-active {
-			color: $secondary;
+			color: $primary;
 			text-decoration: none;
 		}
 	}
@@ -21,10 +22,10 @@
 		a {
 			padding: 0 15px;
 			text-align: center;
-			border-radius: 12px;
+			border-radius: 5px;
 			&.ezt-active {
 				color: #fff;
-				background-color: $secondary;
+				background-color: $primary;
 			}
 		}
 	}
