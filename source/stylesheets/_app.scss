@@ -63,6 +63,9 @@ img {
 	list-style-type: circle;
 	margin-bottom: 25px;
 }
+.u-full {
+	width: 100%;
+}
 
 .u-screen {
 	position: absolute;
@@ -161,8 +164,9 @@ img {
 	color: #fff;
 	margin: 10px auto;
 	text-align: center;
-	tranition: background 0.2s ease-out;
+	transition: background 0.2s ease-out;
 	background: $primary;
+	border: none;
 	&.u-text-center {
 		margin: 15px auto;
 		display: block;
@@ -182,12 +186,6 @@ form {
 	background: #f9f9f9;
 }
 
-input[type="submit"] {
-	display: block;
-	width: 100%;
-	background: #fff;
-}
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -198,7 +196,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea, {
+textarea, select {
   padding: 8px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
@@ -213,6 +211,10 @@ textarea, {
   max-height: 850px;
   font-size: 0.8em;
   transition: border-color 0.2s ease-out;
+}
+
+select {
+	height: 36px;
 }
 
 
@@ -244,7 +246,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
-textarea:focus {
+textarea:focus, select:focus {
   border: 1px solid #aaa;
   outline: 0;
 }
@@ -256,7 +258,7 @@ input[type="text"].error,
 input[type="tel"].error,
 input[type="url"].error,
 input[type="password"].error,
-.nice-select.error {
+.nice-select.error, select.error {
   border: 1px solid $primary;
   color: $primary;
 }
@@ -331,9 +333,26 @@ a.fancybox-block {
 		}
 	}
 	&.contact {
+		padding: 0;
+		h5, p {
+			margin: 0;
+		}
 		& > section {
-			height: 125px; 
-			margin-top: -62px;
+			position: static;
+			background-color: #eee;
+			height: auto;
+			padding: 25px;
+		}
+		h5 {
+			color: #333;
+		}
+		&:hover {
+			h5 {
+				color: #fff;
+			}
+			& > section {
+			background-color: $primary;
+		}
 		}
 	}
 }
