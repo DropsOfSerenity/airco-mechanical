@@ -1,7 +1,8 @@
 .home-hero {
 	text-align:center;
 	padding: 45px 0;
-	background: url('../images/sustainability.jpg') no-repeat center center fixed; 
+	background: url('../images/sustainability.jpg');
+  background-position: center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
