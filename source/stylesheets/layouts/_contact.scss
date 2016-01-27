@@ -1,14 +1,19 @@
 .l-contact-splash {
-	background-color: #eee;
+	background-color: $tertiary;
 	h3 {
 		font-size: 42px;
+		color: #fff;
 	}
 	h4 {
-		color: $primary;
 		font-size: 28px;
+		color: #fff;
+	}
+	p {
+		color: rgba(250,250,250,0.6);
 	}
 	p.address {
 		font-size: 18px;
 		font-weight: bold;
+		font-weight: 300;
 	}
 }

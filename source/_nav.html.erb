@@ -8,9 +8,27 @@
 		<div class="ecg-burger"></div>
 		<!-- menu -->
 		<section class="ecg-menu">
-		  <ul>
-		    <li><%= link_to 'About','about.html'%></li>
-		    <li><%= link_to 'Services','services.html'%></li>
+		  <ul class="primary">
+		    <li>
+		    	<%= link_to 'About <i class="fa fa-angle-down"></i>','about.html', :class=>'has-sub'%>
+		    	<ul class="sub">
+		    		<li><a href="history.html">History</a></li>
+		    		<li><a href="corporate-culture.html">Corporate Culture</a></li>
+		    		<li><a href="core-values.html">Core Values</a></li>
+		    		<li><a href="market-sectors.html">Market Sectors</a></li>
+		    		<li><a href="affiliations.html">Affiliations</a></li>
+		    	</ul>
+		    </li>
+		    <li>
+		    	<%= link_to 'Services <i class="fa fa-angle-down"></i>','services.html', :class=>'has-sub' %>
+		    	<ul class="sub">
+		    		<li><a href="design-build.html">Design Build</a></li>
+		    		<li><a href="construction.html">Construction</a></li>
+		    		<li><a href="special-projects.html">Special Projects</a></li>
+		    		<li><a href="controls.html">Controls</a></li>
+		    		<li><a href="testing-adjusting-and-balancing.html">Testing, Adjusting, &amp; Balancing</a></li>
+		    	</ul>
+		    </li>
 		    <li><%= link_to 'Sustainability','sustainability.html'%></li>
 		    <li><%= link_to 'Safety','safety.html'%></li>
 		    <li><%= link_to 'Projects','projects.html'%></li>
