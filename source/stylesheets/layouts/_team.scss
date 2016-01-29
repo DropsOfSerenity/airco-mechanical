@@ -1,0 +1,14 @@
+.l-team-body {
+	@media (max-width:767px) {
+		img {
+			margin: 10px auto;
+			max-width: 240px;
+		}
+	}
+	@media (max-width:1199px) {
+		img {
+			margin: 30px auto;
+			display: block;
+		}
+	}
+}
