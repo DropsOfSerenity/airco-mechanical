@@ -4339,6 +4339,17 @@ body.contact footer .main ul li:nth-of-type(8) a {
   .l-contact-splash img {
     max-width: 140px; }
 
+@media (max-width: 767px) {
+  /* line 3, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_team.scss */
+  .l-team-body img {
+    margin: 10px auto;
+    max-width: 240px; } }
+@media (max-width: 1199px) {
+  /* line 9, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_team.scss */
+  .l-team-body img {
+    margin: 30px auto;
+    display: block; } }
+
 /* line 12, /Users/chief/work/airco-mechanical/source/stylesheets/_app.scss */
 body.main {
   font-family: 'Lato', sans-serif;
