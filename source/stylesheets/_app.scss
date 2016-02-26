@@ -131,6 +131,9 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
+	&.small {
+		max-width: 180px;
+	}
 }
 
 .u-text-center {
@@ -312,6 +315,11 @@ a.fancybox-block {
 		transition: all 0.2s ease-out;
 		background-color: $primary;
 		padding: 0 15px;
+		&.small {
+			h5 {
+				font-size: 12px;
+			}
+		}
 		h5, p {
 			width: 100%;
 			color: #fff;
