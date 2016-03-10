@@ -4306,12 +4306,17 @@ body.contact footer .main ul li:nth-of-type(8) a {
     .projects-ezt {
       display: none; } }
 
-/* line 27, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+@media (max-width: 767px) {
+  /* line 26, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+  .our-projects-title {
+    display: none; } }
+
+/* line 32, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
 .projects-ezt-container h3 {
   margin: 0 0 25px 0;
   font-size: 32px; }
 @media (max-width: 767px) {
-  /* line 32, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
+  /* line 37, /Users/chief/work/airco-mechanical/source/stylesheets/layouts/_projects.scss */
   .projects-ezt-container .ezt-content {
     display: block !important;
     margin-bottom: 25px; } }
