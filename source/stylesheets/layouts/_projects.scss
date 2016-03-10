@@ -23,6 +23,11 @@
 	}
 }
 
+.our-projects-title {
+	@media (max-width:767px) {
+		display: none;
+	}
+}
 .projects-ezt-container {
 	h3 {
 		margin: 0 0 25px 0;
