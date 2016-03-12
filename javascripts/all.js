@@ -6,7 +6,9 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 $(function(){  
   var eztLink = $( ".ezt-nav a" );
 
-  $(eztLink).click(function() {
+  $(eztLink).click(function(e) {
+    e.preventDefault();
+    
     var ezTarget = $(this).closest('ul').attr('ezt');
     var ezTargetSelector = '[ezt="' + ezTarget + '"] ';
     var ezIndex = $(this).parent().index() + 1; 
