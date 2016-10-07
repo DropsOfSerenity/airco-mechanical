@@ -11,26 +11,23 @@
     <link rel="stylesheet" href="stylesheets/all.css">
   </head>
   <body class="<%= page_classes %>">
-  	<form>
-  		<div class="container">
-        
-        <form action="https://formspree.io/email_marketing@aircomech.com"
-      method="POST">
+		<div class="container">
+      <form action="https://formspree.io/email_marketing@aircomech.com"
+    method="POST">
 
-          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-          <input type="hidden" name="_subject" value="Contact Request from Aircomech!" />
-          <!-- all your input fields here.... -->
-          <h3 class="u-text-center margin-md">Contact Us</h3>
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="email" placeholder="Email" name="_replyto" required>
-          <textarea placeholder="Your message." name="message`" required></textarea>
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-sm-offset-8">
-              <input type="submit" value="Send">
-            </div>
+        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+        <input type="hidden" name="_subject" value="Contact Request from Aircomech!" />
+        <!-- all your input fields here.... -->
+        <h3 class="u-text-center margin-md">Contact Us</h3>
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="Email" name="_replyto" required>
+        <textarea placeholder="Your message." name="message`" required></textarea>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-8">
+            <input type="submit" value="Send">
           </div>
-        </form>
-  		</div>
-  	</form>
+        </div>
+      </form>
+		</div>
   </body>
 </html>
