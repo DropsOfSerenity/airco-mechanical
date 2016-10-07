@@ -14,25 +14,20 @@
   	<form>
   		<div class="container">
         
-        <form action="https://getsimpleform.com/messages?form_api_token=86d1acc80954ccb3dfd158c85603f426" method="post">
+        <form action="https://formspree.io/email_marketing@aircomech.com"
+      method="POST">
 
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-          <input type='hidden' name='redirect_to' value='http://aircomech.com/thankyou.html' />
-
+          <input type="hidden" name="_next" value="http://aircomech.com/thankyou.html" />
+          <input type="hidden" name="_subject" value="Contact Request from Aircomech!" />
           <!-- all your input fields here.... -->
           <h3 class="u-text-center margin-md">Contact Us</h3>
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <!-- <label>Reason for Contacting</label>
-          <select>
-            <option>Sales</option>
-            <option>Comment or Complaint</option>
-            <option>Careers</option>
-          </select> -->
-          <textarea placeholder="Your message." required></textarea>
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="email" placeholder="Email" name="_replyto" required>
+          <textarea placeholder="Your message." name="message`" required></textarea>
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-sm-offset-8">
-              <input type="submit">
+              <input type="submit" value="Send">
             </div>
           </div>
         </form>
