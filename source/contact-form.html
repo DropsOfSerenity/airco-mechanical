@@ -16,8 +16,10 @@
     method="POST">
 
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type="hidden" name="_subject" value="Contact Request from Aircomech!" />
         <!-- all your input fields here.... -->
+        <input type="hidden" name="_next" value="http://aircomech.com/thankyou.html" />
+        <input type="hidden" name="_subject" value="Contact Request from Aircomech!" />
+        <input type="text" name="_gotcha" style="display:none" />
         <h3 class="u-text-center margin-md">Contact Us</h3>
         <input type="text" placeholder="Name" name="name" required>
         <input type="email" placeholder="Email" name="_replyto" required>
