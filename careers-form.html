@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="stylesheets/all.css">
   </head>
   <body class="<%= page_classes %>">
-  	<form>
+  	<form action="https://formspree.io/email_marketing@aircomech.com"
+    method="POST">
   		<div class="container">
+        <input type="hidden" name="_next" value="http://aircomech.com/thankyou.html" />
+        <input type="hidden" name="_subject" value="Job Request from Aircomech!" />
+        <input type="text" name="_gotcha" style="display:none" />
+
         <h3 class="u-text-center margin-md">Apply with Us</h3>
-  			<input type="text" placeholder="Name" required>
-  			<input type="email" placeholder="Email" required>
-  			<textarea placeholder="Tell us about yourself." required></textarea>
+  			<input type="text" placeholder="Name" name="name" required>
+  			<input type="email" placeholder="Email" name="_replyto" required>
+  			<textarea placeholder="Tell us about yourself." name="message" required></textarea>
   			<label>Resume:</label>
-  			<input type="file">
+  			<input type="file" name="file" required>
   			<div class="row">
   				<div class="col-xs-12 col-sm-4 col-sm-offset-8">
-  					<input type="submit">
+  					<input type="submit" value="Send">
   				</div>
   			</div>
   		</div>
